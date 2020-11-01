@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+
+html{
+  background-color: #f9ffd0;
+  font-family: Nunito;
+}
+
+h1{
+  text-align: center;
+  color: #f8382f;
+}
+
+#footer{
+  font-size: 15;
+  text-align: center;
+  color: #f8382f;
+}
+
+#timekeeper{
+  background-color: #ff6961;
+  margin: 10px auto;
+  max-width: 300px;
+  width: 95vw;
+  border-radius: 8px;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "main main"
+    "work break";
+}
+
+#main-clock{
+  grid-area: main;
+  background-color: #ff4136;
+  padding: 20px 10px;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#workSetter{
+  grid-area: work;
+  padding: 5px;
+  color: white;
+  text-align: center;
+}
+
+#breakSetter{
+  grid-area: break;
+  padding: 5px;
+  color: white;
+  text-align: center;
+}
+
+button{
+  background-color: inherit;
+  border: none;
+  color: white;
+}
+
+#start_stop{
+  margin-right: 40px;
+  font-size: 25px;
+}
+
+#reset{
+  margin-left: 40px;
+  font-size: 25px;
+}
